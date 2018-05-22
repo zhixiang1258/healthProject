@@ -1,0 +1,14 @@
+.layui-header{
+		background-color: #b0bbd2 !important;
+}
+.layui-logo{
+		background-color: #435573;
+}
+.layui-body{
+	margin-bottom:10px; 
+}
+.layui-footer{
+	padding-top: 10px !important;
+	height: 40px !important;
+	background-color: #b0bbd2 !important;
+}

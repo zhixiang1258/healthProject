@@ -1,0 +1,79 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	min-width: 960px !important;
+}
+.xl_item{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+}
+.xl_p{
+	padding: 0;
+	margin:0;
+	border: 0;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	font-size: 10px;
+}
+.xl_border{
+	width: 100%;
+	border: 1px solid #eee;
+	border-radius:5px;
+	box-shadow:0px 1px 5px #888888; 
+	margin-bottom: 5px;
+}
+.xl_border_head{
+	width: 100%;
+	background-color: #f0f3f9;
+	text-indent: 20px;
+	font-size: 14px;
+	line-height: 45px;
+	overflow: hidden;
+}
+.xl_left{
+	float: left;
+}
+.xl_right{
+	float: right;
+}
+.content{
+	width: 98%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.layui-tab-title{
+	margin-top: 10px;
+}
+.xl_block{
+	display: block !important;
+}
+.demo-class{
+	width: 80% !important;
+	left: 10%;
+	top: 5%;
+	height: 90%;
+}
+.layui-layer-title{
+	background-color: #3497db !important;
+}
+@media screen and (max-width: 960px) {
+    .layui-side{
+		display: none;
+    }
+    .layui-body{
+		left: 0px;
+		width: auto;
+    }
+    .layui-logo{
+		background-color: #b0bbd2;
+    }
+    .layui-layout-admin .layui-footer{
+    	left: 0;
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../js/layui/css/layui.css"  media="all">
+	<link rel="stylesheet" href="../css/re_layui.css"  media="all">
+	<link rel="stylesheet" href="../css/coment.css"  media="all">
+	<link rel="stylesheet" href="../css/style.css"  media="all">
+</head>
+<body>
+	<div class="add_patients_top layui-form">
+		<div class="xl_left add_patients_top_c">
+		<div class="xl_border">
+			<div class="xl_border_head">
+				<span class="xl_left">姓名 性别 年龄</span><span class="xl_right">重点患者</span>
+			</div>
+			<div class="xl_border_content" style="min-height: 338px;">
+                <ul style="padding: 10px;">
+                    <li>
+                        <div class="layui-form-item lay_search">
+                            <label class="layui-form-label">就&nbsp;&nbsp;诊&nbsp;号：</label>
+                            <div class="layui-input-block">
+                               就诊号
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">电话号码：</label>
+                            <div class="layui-input-block">
+                                电话号码
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">身份证号：</label>
+                            <div class="layui-input-block">
+                                身份证号码
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">出生日期：</label>
+                            <div class="layui-input-block">
+                                出生日期
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">身　　高：</label>
+                            <div class="layui-input-block">
+                                身　　高
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">病　　种：</label>
+                            <div class="layui-input-block">
+                                病　　种
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+			</div>
+		</div>
+		</div>
+		<div class="xl_left add_patients_top_c">
+			<div class="xl_border">
+				<div class="xl_border_head">
+					就诊信息
+				</div>
+				<div class="xl_border_content" style="min-height: 338px;">
+                <ul style="padding: 10px;">
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">主诊医师：</label>
+                            <div class="layui-input-block">
+                                主诊医师
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">就诊日期：</label>
+                            <div class="layui-input-block">
+                                就诊日期
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">就诊方式：</label>
+                            <div class="layui-input-block">
+                                就诊方式
+                            </div>
+                        </div>
+                    </li>
+                    <li class="inhospitalTime" style="display: none;">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">住院日期：</label>
+                            <div class="layui-input-block">
+                                住院日期
+                            </div>
+                        </div>
+                    </li>
+                    <li class="outhospitalTime" style="display: none;">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">出院日期：</label>
+                            <div class="layui-input-block">
+                                出院日期
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">诊　　断：</label>
+                            <div class="layui-input-block">
+                                诊　　断
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">诊断备注：</label>
+                            <div class="layui-input-block">
+                                诊断备注
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">计划复诊：</label>
+                            <div class="layui-input-block">
+                                计划复诊
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="add_patients_dm">
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+          <ul class="layui-tab-title">
+            <li class="layui-this">挂号单</li>
+            <li>病历单</li>
+            <li>检测报告</li>
+            <li>检查报告</li>
+            <li>出院小结</li>
+          </ul>
+          <div class="layui-tab-content" style="height: 100px;">
+            <div class="layui-tab-item layui-show">内容不一样是要有，因为你可以监听tab事件（阅读下文档就是了）</div>
+            <div class="layui-tab-item">内容2</div>
+            <div class="layui-tab-item">内容3</div>
+            <div class="layui-tab-item">内容4</div>
+            <div class="layui-tab-item">内容5</div>
+          </div>
+        </div>
+    </div>
+<script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="../select2/js/select2.js" charset="utf-8"></script>
+<script src="../select2/js/i18n/zh-CN.js" charset="utf-8"></script>
+<script src="../js/layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript">
+layui.use(['element','form'], function(){
+  var $ = layui.jquery
+  var form = layui.form
+  ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块 
+  
+});
+</script>
+</body>
+</html>
