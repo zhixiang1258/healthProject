@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+	<title></title>
+</head>
+	<link rel="stylesheet" href="../js/layui/css/layui.css"  media="all">
+	<link rel="stylesheet" href="../css/re_layui.css"  media="all">
+	<link rel="stylesheet" href="../css/coment.css"  media="all">
+	<link rel="stylesheet" href="../css/style.css"  media="all">
+<body class="open">
+	<div class="open_head">
+		<img src="../img/logo.png">
+	</div>
+	<div class="open_content">
+		<p class="open_content_p">科室开通申请</p>
+		<div class="open_content_img">
+			<img src="../img/open1.png">
+		</div>
+		<div class="open_form">
+			<form class="layui-form department-register">
+	            <div class="layui-col-xs5">
+	                <div class="layui-form-item">
+	                    <label class="layui-form-label">地区</label>
+	                    <div class="layui-input-block">
+	                        <div class="layui-input-inline">
+	                            <select name="province" lay-filter="province" lay-verify="required">
+	                                <option value="">省</option>
+	                            </select>
+	                        </div>
+	                        <div class="layui-input-inline">
+	                            <select name="city" lay-filter="city" lay-verify="required">
+	                                <option value="">市</option>
+	                            </select>
+	                        </div>
+	                        <div class="layui-input-inline">
+	                            <select name="county" lay-filter="county" lay-verify="required">
+	                                <option value="">县/区</option>
+	                            </select>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="layui-form-item">
+	                    <label class="layui-form-label">医院</label>
+	                    <div class="layui-input-block">
+	                        <select name="hospitalId" lay-filter="hospitalId" lay-verify="required">
+	                            <option value="">请选择</option>
+	                        </select>
+	                    </div>
+	                </div>
+	                <div class="layui-form-item">
+	                    <label class="layui-form-label">科室</label>
+	                    <div class="layui-input-block">
+	                        <input type="text" name="name" required  lay-verify="required" maxlength="40" placeholder="" autocomplete="off" class="layui-input">
+	                    </div>
+	                </div>
+	                <div class="layui-form-item">
+	                    <label class="layui-form-label">姓名</label>
+	                    <div class="layui-input-block">
+	                        <input type="text" name="manageName" required  lay-verify="required" maxlength="20" placeholder="" autocomplete="off" class="layui-input">
+	                    </div>
+	                </div>
+	                <div class="layui-form-item phone_number">
+	                    <label class="layui-form-label">手机号</label>
+	                    <div class="layui-input-block">
+	                        <input type="text" name="managePhone" required  lay-verify="required|phone" maxlength="11" placeholder="" autocomplete="off" class="layui-input">
+	                        <button class="layui-btn verify">验证手机</button>
+	                    </div>
+	                </div>
+	                <div class="layui-form-item">
+	                    <label class="layui-form-label">身份证</label>
+	                    <div class="layui-input-block">
+	                        <input type="text" name="manageIdentity" required  lay-verify="required|identity" maxlength="18" placeholder="" autocomplete="off" class="layui-input">
+	                    </div>
+	                </div>
+	                <div class="layui-form-item">
+	                    <label class="layui-form-label">密码</label>
+	                    <div class="layui-input-block">
+	                        <input type="password" name="managePassword" required  lay-verify="required" maxlength="40" placeholder="" autocomplete="off" class="layui-input">
+	                    </div>
+	                </div>
+	                <div class="layui-form-item">
+	                    <label class="layui-form-label">确认密码</label>
+	                    <div class="layui-input-block">
+	                        <input type="password" name="managePassword2" required  lay-verify="required" maxlength="40" placeholder="" autocomplete="off" class="layui-input">
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="layui-col-xs7">
+	            	<div class="open_form_img">
+	            		<p>身份证上传</p>
+		                <div class="open_form_img_c">
+		                    <a href="javascript:;" id="identityImgFrontBtn"><img id="identityImgFrontImg" src="../img/open5.png" title="身份证(正)"></a>
+		                    <a href="javascript:;" id="identityImgBackBtn"><img id="identityImgBackImg" src="../img/open5.png" title="身份证(反)"></a>
+		                    <input type="hidden" name="identityImgFront">
+		                    <input type="hidden" name="identityImgBack">
+		                </div>
+		                <p style="margin-top: 10px;">工作胸卡上传（无反面可不用上传）</p>
+		                <div class="open_form_img_c">
+		                    <a href="javascript:;" id="chestcardImgFrontBtn"><img id="chestcardImgFrontImg" src="../img/open5.png" title="胸卡(正)"></a>
+		                    <a href="javascript:;" id="chestcardImgBackBtn"><img id="chestcardImgBackImg" src="../img/open5.png" title="胸卡(反)"></a>
+		                    <input type="hidden" name="chestcardImgFront">
+		                    <input type="hidden" name="chestcardImgBack">
+		                </div>
+	            	</div>
+	            </div>
+                <button type="button" class="submit layui-btn submit_btn" lay-filter="save-register" lay-submit>申请开通</button>
+                <button type="button" class="submit layui-btn submit_btn" data-user="/module/Feedback/statement.html">返回</button>
+	        </form>
+		</div>
+	</div>
+	<script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+	<script src="../js/layui/layui.js" charset="utf-8"></script>
+	<script type="text/javascript">
+	layui.use(['carousel', 'form', 'layedit', 'laydate'], function(){
+		var carousel = layui.carousel
+			,form = layui.form
+			,layer = layui.layer
+			,layedit = layui.layedit
+			,laydate = layui.laydate;
+		carousel.render({
+			elem: '#carousel'
+			,width: '100%'
+			,height: '440px'
+			,interval: 5000
+		});
+	});
+	</script>
+</body>
+</html>
